@@ -1,5 +1,7 @@
 package spr_b1;
 
+import java.util.stream.IntStream;
+
 public class Customer {
 
     private final String name;
@@ -29,8 +31,15 @@ public class Customer {
     // a negative integer when this customer is less than other
     public int compareCustomer(Customer other) {
         // to be implemented in part (a)
-
-        return 0;
+        if(this.name.equals(other.name)) {
+            if(this.id == other.id) {
+                return 0;
+            }else{
+                return this.id - other.id;
+            }
+        }else{
+            return this.name.compareTo(other.name);
+        }
     }
 
     // There may be fields, constructors, and methods that are not shown.
