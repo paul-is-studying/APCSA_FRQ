@@ -59,7 +59,26 @@ public class Trip {
     public int getShortestLayover() {
         // to be implemented in part (b)
 
-        return 0;
+        // .minutesUntil returns as "int"
+        int compareValue, minValue;
+        Time firstValue, secondValue;
+
+        // Initialize minValue, error if not. Why?
+        minValue = Integer.MAX_VALUE;
+
+        if(flights.size() < 3){
+            return -1;
+        }else{
+            for(int i = 1; i < flights.size() ; i++){
+                firstValue = flights.get(i+1).getArrivalTime();
+                secondValue = flights.get(i).getArrivalTime();
+                compareValue = firstValue.minutesUntil(secondValue);
+                if (compareValue <= minValue){
+                    minValue =  compareValue;
+                }
+            }
+        }
+        return minValue;
     }
 
 }
