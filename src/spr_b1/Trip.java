@@ -40,8 +40,9 @@ public class Trip {
             return 0;
             // 0 if there are no flights in the trip.
         }else{
-            int returnValue = (flights.get(flights.size()-1).getArrivalTime()) - (flights.get(0).getDepartureTime());
-            return returnValue;
+            Time arrivalValue = flights.get(flights.size()-1).getArrivalTime();
+            Time departureValue = flights.get(0).getDepartureTime();
+            return arrivalValue.minutesUntil(departureValue);
             // arrivalTime - departureTime, assuming arrivalTime is always bigger than departureTime.
         }
     }
