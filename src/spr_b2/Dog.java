@@ -7,8 +7,9 @@ public class Dog extends Pet {
 	}
 
 	public String speak() {
-		// implementation not shown 
-		return "";
+		// implementation not shown
+
+		return "dog-sound";
 	}
 
 }
