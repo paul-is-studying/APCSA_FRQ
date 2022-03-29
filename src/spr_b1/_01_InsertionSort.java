@@ -25,7 +25,9 @@ public class _01_InsertionSort {
      * @param arr
      */
     public static void insertionSort(int[] arr) {
-
+        for (int i = 1; i < arr.length; i++) {
+            
+        }
     }
 
 

@@ -33,8 +33,11 @@ public class Time {
      */
     public int minutesUntil(Time other) {
         // implementation not shown
-
-        return 0;
+        // t1 : hr, min
+        // t2 : other.getHour, other.getMinutes
+        int t1 = hr * 60 + min;
+        int t2 = other.getHour() * 60 + other.getMinutes();
+        return t2 - t1;
     }
 
 

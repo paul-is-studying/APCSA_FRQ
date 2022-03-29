@@ -20,7 +20,7 @@ public class Flight {
      * @return time at which the flight departs
      */
     public Time getDepartureTime() {
-        return dep; /* implementation not shown */
+        return dep;/* implementation not shown */
     }
 
     /**
@@ -28,7 +28,7 @@ public class Flight {
      */
 
     public Time getArrivalTime() {
-        return arr; /* implementation not shown */
+        return arr;/* implementation not shown */
     }
     // There may be instance variables, constructors, and methods that are not shown.
 }
