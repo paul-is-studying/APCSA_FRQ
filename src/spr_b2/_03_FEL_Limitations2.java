@@ -19,6 +19,11 @@ public class _03_FEL_Limitations2 {
 	
 	// use a for-each loop!!
 	private static void printFirstHalf(int[] arr) {
+//		for (int i = 0 ; i<arr.length/2 ; i++){
+//
+//		}
+//		for(int num : arr){
+//		}
 
 	}
 

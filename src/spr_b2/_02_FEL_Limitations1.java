@@ -20,8 +20,15 @@ public class _02_FEL_Limitations1 {
 	
 	// use a for-each loop to add multiply each element by two
 	private static void timesTwo(int[] arr) {
-
-		
+//		for(int num:arr){
+//			num *= 2;
+//		}
+		// primitive & Strings : pass by value
+		// objects : pass by reference
+		// use a for-each loop to add multiply each element by two
+		for (int i = 0 ; i<arr.length ; i++){
+			arr[i] = arr[i]*2;
+		}
 	}
 
 

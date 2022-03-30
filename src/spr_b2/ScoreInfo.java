@@ -9,26 +9,22 @@ public class ScoreInfo {
 		numStudents = 1;
 	}
 
-	/**
-	 * adds 1 to the number of students who earned this score
-	 */
-	public void increment() {
+	// adds 1 to the number of students who earned this score
+	public ScoreInfo increment() {
 		numStudents++;
+		return null;
 	}
 
-	/**
-	 * @return this score
-	 */
-	public int getScore() {
+	//@return this score
+	public int getScore(){
 		return score;
 	}
 
-	/**
-	 * @return the number of students who earned this score
-	 */
+	//@return the number of students who earned this score
 	public int getFrequency() {
 		return numStudents;
 	}
+
 	// added
 	public String toString() {
 		return score+"("+numStudents+")";

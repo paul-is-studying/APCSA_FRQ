@@ -1,8 +1,8 @@
-package spr_b2;
+package spr_b3;
 
 import java.util.ArrayList;
 
-public class _04_FEL_Limitations3 {
+public class _05_ChangeIt5 {
 
 	public static void main(String[] args) {
 
@@ -14,22 +14,18 @@ public class _04_FEL_Limitations3 {
 		list.add("b");
 		System.out.println(list);
 		
-		// @task remove all "a"s from this list
-		removeAs(list);
+		changeIt(list);
 		
 		System.out.println(list);
 		
 	}
-	
-	// use a for-each loop!!
-	private static void removeAs(ArrayList<String> list) {
-		for (String s : list){
-			if (s.equals("a")){
-				list.remove(s);
 
-			}
-		}
+	private static void changeIt(ArrayList<String> list) {
+
+
 	}
-	
+
+
+
 
 }

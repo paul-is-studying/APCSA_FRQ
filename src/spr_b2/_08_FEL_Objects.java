@@ -22,8 +22,10 @@ public class _08_FEL_Objects {
 
 	// use a for each loop!!
 	private static void timesTwo(Point[] arr) {
+		for(Point p : arr){
+			p.setX(p.getX()*2);
+		}
 
-		
 	}
 
 	public static class Point {

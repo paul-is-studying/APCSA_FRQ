@@ -9,6 +9,7 @@ public class _13_Inheritance_Overriding {
 		// ** subclasses can access parent class's data and methods...
 		// 1. methods: if overridden, use super.method() if not, just use method().
 		Child c1 = new Child();
+		c1.print();
 //		c1.printChild();
 		// 2. data: Respect Parents' privacy!!
 		

@@ -18,6 +18,9 @@ public class _09_FEL_Misusage2 {
 		for(Point p : list) {
 
 			// TODO: complete code here
+//			total += list.get(p).getX();
+//			total += list[p].getX();
+//			total+= Point.get(p).getX();
 			
 		}
 		System.out.println(total);

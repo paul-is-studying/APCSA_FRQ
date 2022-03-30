@@ -18,5 +18,6 @@ public class Pet {
 	
 	// added to enable Main
 	public Pet() {
+
 	}
 }
