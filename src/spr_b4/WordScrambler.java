@@ -41,9 +41,17 @@ public class WordScrambler {
 	// changed from private for demonstration purposes
 	public String[] mixedWords(String[] words) {
 		// (b)
-
-
-		return null;
+		int arrayLength = words.length;
+		String[] mixed = new String[arrayLength];
+		if(arrayLength % 2 == 1){
+			System.out.println("This test case is inappropriate.");
+		}else{
+			for(int i = 0 ; i < arrayLength ; i+=2){
+				mixed[i] = recombine(words[i],words[i+1]);
+				mixed[i+1] = recombine(words[i+1],words[i]);
+			}
+		}
+		return mixed;
 	}
 	
 	// There may be instance variables, constructors, and methods that are not shown.
