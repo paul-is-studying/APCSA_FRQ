@@ -68,7 +68,29 @@ public class Hotel {
 	// in this hotel
 	public Reservation cancelAndReassign(Reservation res) {
 		// to be implemented in part (b) 
-
+		int roomNumber = res.getRoomNumber();
+		boolean checkRoom = false;
+		
+		for(int i = 0 ; i < rooms.length-1 ; i++){
+			if(rooms[i].getRoomNumber() == roomNumber){
+				checkRoom = true;
+				ArrayList<String> newArray = new ArrayList(Arrays.asList(rooms));
+				newArray.remove(roomNumber);
+				Reservation[] rooms = newArray.toArray(new Reservation[newArray.size()]);
+				break;
+			}
+		}
+		
+		if(checkRoom == true){
+			if(waitList == null){
+				// Mark the room specified by res as empty
+				return null;
+			}else{
+				String waitListPerson = waitList.get(0);
+				waitList.remove(0);
+				return new Reservation(waitListPerson,roomNumber);
+			}
+		}
 		
 		return null;
 	}
