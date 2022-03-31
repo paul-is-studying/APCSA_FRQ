@@ -21,7 +21,9 @@ public class _05_ChangeIt5 {
 	}
 
 	private static void changeIt(ArrayList<String> list) {
-
+		for (int i = 0 ; i < list.size() ; i++){
+			list.set(i, list.get(i)+list.get(i));
+		}
 
 	}
 

@@ -1,6 +1,7 @@
 package spr_b3;
 
-public class _31_2DArrays {
+public class
+_31_2DArrays {
 
 	public static void main(String[] args) {
 

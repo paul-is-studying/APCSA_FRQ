@@ -17,7 +17,9 @@ public class _03_ChangeIt3 {
 	}
 
 	private static void changeIt(int[] arr) {
-
+		for(int i = 0 ; i < arr.length ; i++){
+			arr[i] = arr[i] * 2;
+		}
 
 	}
 

@@ -18,8 +18,22 @@ public class SeatingChart {
 	* - studentList is unchanged.
 	*/
 	public SeatingChart(List<Student> studentList, int rows, int cols) { 
-		// to be implemented in part (a) 	
+		// to be implemented in part (a)
+		int i = 0;// initialize
+		seats = new Student[rows][cols];
+		for ( int c= 0 ; c<seats[0].length ; c++){
+			for (int r = 0 ; r<seats.length;r++){
+				seats[r][c] = studentList.get(i); //usage
+				i++; //increment to get the next item of the list.
+				if(i>=studentList.size()){
+					seats[r][c] = studentList.get(i);
+					i++;
+				}else{
 
+				}
+			}
+			//check if there is indexoutofbounds.
+		}
 
 	}
 

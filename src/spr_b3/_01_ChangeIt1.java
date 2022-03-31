@@ -15,7 +15,7 @@ public class _01_ChangeIt1 {
 	}
 
 	private static void changeIt(int a) {
-
+		a = a*2;
 		
 	}
 	

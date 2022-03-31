@@ -22,8 +22,16 @@ public class TemperatureGrid {
 	// turned public for demonstration purposes.
 	public double computeTemp(int row, int col) {
 		// to be implemented in part (a) 
-
-		return 0;
+		if(row==0||col==0||row==temps.length-1||col==temps[0].length-1){
+			return temps[row][col];
+		}else{
+			double total = 0;
+			total += temps[row-1][col];
+			total += temps[row+1][col];
+			total += temps[row][col-1];
+			total += temps[row][col+1];
+			return (double)total/4;
+		}
 	}
 
 	/**
@@ -38,10 +46,21 @@ public class TemperatureGrid {
 	 *         corresponding call to computeTemp.
 	 */
 	public boolean updateAllTemps(double tolerance) {
-		// to be implemented in part (b)
+		// to be implemented in part
 
+		boolean within = true;
+		for (int r = 0 ; r<temps.length;r++){
+			for ( int c = 0 ; c <temps[0].length;c++){
+				double newval = computeTemp(r,c);
+				if(Math.abs(newval - temps[r][c]) > tolerance){
+					return false;
+				}
+				temps[r][c] = newval;
 
-		return false;
+			}
+		}
+
+		return within;
 	}
 	
 	// There may be instance variables, constructors, and methods that are not shown.

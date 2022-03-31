@@ -15,7 +15,7 @@ public class _02_ChangeIt2 {
 	}
 
 	private static void changeIt(String str) {
-
+		str += "World!";
 
 	}
 	

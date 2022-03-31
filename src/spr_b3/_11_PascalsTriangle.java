@@ -23,8 +23,23 @@ public class _11_PascalsTriangle {
 	}
 	
 	public static int[][] pascalsTriangle(int n) {
+		int[][] ret = new int[n][n];
+		for (int r = 0 ; r < ret.length ; r++){
+			for( int c = 0 ; c < r ; c++){
+				if(c == 0){
+					ret[r][c] = 1;
+				}else if(r == c) {
+					ret[r][c] = 1;
+//				}else if(c < r) {
+//					ret[r][c] = ret[r - 1][c] + ret[r - 1][c - 1];
+//				} OR
+				}else{
+					ret[r][c] = ret[r-1][c]+ret[r-1][c-1];
+				}
+			}
+		}
 
-		return null;
+		return ret;
 	}
 
 	public static void printMatrix(int[][] arr) {
