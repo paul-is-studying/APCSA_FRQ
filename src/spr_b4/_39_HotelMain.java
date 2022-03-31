@@ -25,7 +25,7 @@ public class _39_HotelMain {
 		System.out.println(h);
 		h.cancelAndReassign(h.getReservation("Gandalf"));
 		System.out.println(h);
-		
+
 	}
 
 }

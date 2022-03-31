@@ -27,7 +27,7 @@ public class Hotel {
 	}
 	public Reservation getReservation(String n) {
 		// added for main()
-		
+
 		return null;
 	}
 	
@@ -38,9 +38,22 @@ public class Hotel {
 	// otherwise, add the guest to the end of waitList
 	// and return null
 	public Reservation requestRoom(String guestName) {
-		// to be implemented in part (a) 
+		// to be implemented in part (a)
+		boolean checkFin = false;
+		if (rooms.length != 0) {
+			for(int i = 0 ; i < (rooms.length-1) ; i++){
+				if(rooms[i] == null){
+					new Reservation(guestName,i);
+					checkFin = true;
+					break;
+				}
+			}
+		}
 
-		
+		if(checkFin == false){
+			waitList.add(guestName);
+		}
+
 		return null;
 	}
 	
