@@ -22,8 +22,13 @@ public class WordScrambler {
 	// changed from private for demonstration purposes
 	public String recombine(String word1, String word2) { 
 		// (a)
+		int wordOneLength = 0;
+		int wordTwoLength = 0;
 
-		return "";	
+		wordOneLength = word1.length();
+		wordTwoLength = word2.length();
+
+		return word1.substring(0,wordOneLength/2) + word2.substring(wordTwoLength/2,wordTwoLength);
 	}
 
 	/**
@@ -36,7 +41,8 @@ public class WordScrambler {
 	// changed from private for demonstration purposes
 	public String[] mixedWords(String[] words) {
 		// (b)
-		
+
+
 		return null;
 	}
 	
