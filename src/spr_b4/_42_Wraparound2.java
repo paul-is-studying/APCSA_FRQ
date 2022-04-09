@@ -15,7 +15,8 @@ public class _42_Wraparound2 {
 			System.out.print(arr[(i+arr.length*num)%arr.length]+" ");
 			i--;
 		}
-		
+
+
 
 
 	}
